@@ -37,14 +37,14 @@ namespace ProductsCRUD.Controllers
         [HttpPost]
         public async Task<IActionResult> AddProduct(string productCRUD)
         {
-            ProductCRUD p = new() { Name = productCRUD };
+            Product p = new() { Name = productCRUD };
             await _db.Products.AddAsync(p);
             _db.SaveChanges();
             return Ok(p);
         }
 
         [HttpPut("id")]
-        public async Task<IActionResult> UpdateProduct(ProductCRUD product)
+        public async Task<IActionResult> UpdateProduct(Product product)
         {
             var p = await _db.Products.SingleOrDefaultAsync(p => p.Id == product.Id);
             if (p == null)

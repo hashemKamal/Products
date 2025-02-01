@@ -10,7 +10,7 @@ namespace ProductsCRUD.Data
         {
 
         }
-        public DbSet<ProductCRUD> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 
 }

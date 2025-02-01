@@ -7,7 +7,7 @@ namespace IProductsCRUD.Controllers
     {
         Task<IActionResult> AddProduct(string productCRUD);
         Task<IActionResult> GetProducts();
-        Task<IActionResult> UpdateProduct(ProductCRUD productCRUD);
+        Task<IActionResult> UpdateProduct(Product productCRUD);
 
     }
 }
