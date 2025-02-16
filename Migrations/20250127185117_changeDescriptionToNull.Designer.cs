@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ProductsCRUD.Data;
+using Products.Data;
 
 #nullable disable
 
-namespace ProductsCRUD.Migrations
+namespace Products.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20250127185117_changeDescriptionToNull")]

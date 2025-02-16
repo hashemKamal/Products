@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace ProductsCRUD.Migrations
+namespace Products.Migrations
 {
     /// <inheritdoc />
     public partial class Product : Migration

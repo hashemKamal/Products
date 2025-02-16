@@ -1,12 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProductsCRUD.Data.Models;
+using Products.Data.Models;
 
-namespace IProductsCRUD.Controllers
+namespace IProducts.Controllers
 {
-    public interface IProductsControlers
+    public interface IProductsController
     {
         Task<IActionResult> AddProduct(string productCRUD);
         Task<IActionResult> GetProducts();
+        Task<IActionResult> GetProductById(int id);
         Task<IActionResult> UpdateProduct(Product productCRUD);
 
     }

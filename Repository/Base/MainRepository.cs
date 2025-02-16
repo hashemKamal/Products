@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace ProductsCRUD.Repository.Base
+namespace Products.Repository.Base
 {
     public class MainRepository<T> : IRepository<T> where T : class
     {

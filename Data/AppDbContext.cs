@@ -1,14 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ProductsCRUD.Data.Models;
+using Products.Data.Models;
 
 
-namespace ProductsCRUD.Data
+namespace Products.Data
 {
     public class AppDbContext : DbContext
     {
+        
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-
+           
         }
         public DbSet<Product> Products { get; set; }
     }

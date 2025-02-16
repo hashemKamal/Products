@@ -1,4 +1,4 @@
-﻿namespace ProductsCRUD.Repository.Base
+﻿namespace Products.Repository.Base
 {
     public interface IRepository<T> where T : class
     {

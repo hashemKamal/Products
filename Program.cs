@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using ProductsCRUD.Data;
-using ProductsCRUD.Repository.Base;
+using Products.Data;
+using Products.Data.Models;
+using Products.Repository.Base;
 
 var builder = WebApplication.CreateBuilder(args);
 

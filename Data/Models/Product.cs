@@ -1,7 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ProductsCRUD.Data.Models
+namespace Products.Data.Models
 {
+
+    // CTRL k + d
     public class Product
     {
 
