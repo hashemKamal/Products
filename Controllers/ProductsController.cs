@@ -49,7 +49,7 @@ namespace Products.Controllers
             return Ok(p);
         }
 
-        [HttpPut("id")]
+        [HttpPut]
         public async Task<IActionResult> UpdateProduct(Product product)
         {
             var p = await _db.Products.SingleOrDefaultAsync(p => p.Id == product.Id);
